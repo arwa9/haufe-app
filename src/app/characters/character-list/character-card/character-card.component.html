@@ -1,0 +1,35 @@
+<div class="char-container">
+  <!-- Image -->
+  <div class="img-container">
+    <img [src]="character.image" alt="">
+  </div>
+  <!-- Details -->
+  <div class="details">
+    <!-- Name -->
+    <h3>{{character.name}}</h3>
+    <!-- Status -->
+    <section>
+      <label>Status:</label>
+      <span>
+        <div class="dot" [ngClass]="character.status.toString() | lowercase"></div>
+        {{character.status}}
+      </span>
+    </section>
+    <!-- Species -->
+    <section>
+      <label>Species:</label>
+      <span>{{character.species}}</span>
+    </section>
+
+    <!-- <section>
+      <label>Last Known Location:</label>
+      <p>{{character.location?.name}}</p>
+    </section>
+
+    <section>
+      <label>First seen in:</label>
+      <p>{{character.origin?.name}}</p>
+    </section> -->
+
+  </div>
+</div>
